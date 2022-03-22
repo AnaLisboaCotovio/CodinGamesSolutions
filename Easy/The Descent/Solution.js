@@ -1,16 +1,13 @@
-while (true) { // game loop
+while (true) { // Game loop - Loops everytime the ship changes direction
+    let max = 0; // The max height of a mountain
+    let idmax = 0; // The id of the mountain with the maximum height
+    for (let i = 0; i < 8; i++) { // Looping within the 8 - the amount of mountains
+        const mountainH = parseInt(readline()); // Represents the height of one mountain just given as input
 
-    // VARIABLES
-    let max = 0; // This will be the height of the tallest mountain
-    let idmax = 0; // This will be the index of the tallest mountain 
-
-    for (let i = 0; i < 8; i++) { // Evaluation of all the maountains remaining in each turn
-        const mountainH = parseInt(readline()); // represents the height of one mountain.
-
-        if(mountainH > max){ //Compare each mountain height with the height of the current max
-            max = mountainH; // if the mountain is taller it becomes the new max
-            idmax = i; //and the id of that max mountain becomes the id of the max 
+        if(mountainH > max){ // If the input mountain's height is bigger than the maximum
+            max = mountainH; // Substitute de maximum height for the input's height
+            idmax = i; // And the id of the maximum height mountain for the id of the input's mountain
         }
     }
-    console.log(idmax); // Code to fire upon the tallest mountain 
+    console.log(idmax); // Destroy the tallest mountain
 }
