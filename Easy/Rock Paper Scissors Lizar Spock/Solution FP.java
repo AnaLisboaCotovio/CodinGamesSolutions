@@ -58,7 +58,7 @@ class Solution {
         String enemies = ""; // It will take the list of enemies that lost to the winner as a string
         for(int i = 0; i < n-1; i++){ // Loop over the loser's list
             if(lostTo.get(i) == winner){ // If the player lost to the winner
-                enemies += String.valueOf(losers.get(i)) + " "; // add the number of the loser to the enemies string
+                enemies += String.valueOf(losers.get(i)) + " "; // Add the number of the loser to the enemies string
             }
         }
 
@@ -75,7 +75,7 @@ class Solution {
         // If the pattern doesn't have the signs of both players together, this means the sign is the same
         else if(player1 < player2) // If the number of the first player is smaller than the second one (as requested in the rules)
             return true; // The first player wins
-        else // If the number of the first player is smaller than the second one (as requested in the rules)
+        else // If the number of the second player is smaller than the first one (as requested in the rules)
             return false; // The second player wins
     }
 }
