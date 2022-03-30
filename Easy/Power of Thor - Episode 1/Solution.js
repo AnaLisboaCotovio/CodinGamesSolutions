@@ -1,36 +1,58 @@
-// VARIABLES
 var inputs = readline().split(' ');
-const lightX = parseInt(inputs[0]); // the X position of the light of power
-const lightY = parseInt(inputs[1]); // the Y position of the light of power
-const initialTx = parseInt(inputs[2]); // Thor's starting X position
-const initialTy = parseInt(inputs[3]); // Thor's starting Y position
-var thorX = initialTx; // Thor's current X position
-var thorY = initialTy; // Thor's current Y position
-let direçãoX = ""; // the direction thor will take in the X axis
-let direçãoY = ""; // the direction thor will take in the Y axis
- 
-while (true) { // game loop
-    const remainingTurns = parseInt(readline()); // The remaining amount of turns Thor can move.
- 
-    if(lightX > thorX){
-        direçãoX = 'E';
-        thorX++;
-    } else{
-        if(lightX < thorX){
-            direçãoX = 'W';
-            thorX--;
-        }
-    } 
+const lightX = parseInt(inputs[0]); // The X position of the light of power
+const lightY = parseInt(inputs[1]); // The Y position of the light of power
+let thorX = parseInt(inputs[2]); // Thor's starting X position
+let thorY = parseInt(inputs[3]); // Thor's starting Y position
 
-    if(lightY > thorY){
-        direçãoY = 'S';
-        thorY++;
-    } else{
-        if(lightY < thorY){
-            direçãoY = 'N';
+while (true) {
+    let direction = ""; // Direction in which thor will move in each turn
+
+    // Compare Thor's coordinates with the light of power's
+    // Give a direction for thor to move
+    // Change Thor's coordinates accordingly
+    if(lightX > thorX && lightY < thorY){
+        direction = "NE";
+        thorX++;
+        thorY--;
+    }else{
+        if(lightX < thorX && lightY < thorY){
+            direction = "NW";
+            thorX--;
             thorY--;
+        }else{
+            if(lightX < thorX && lightY > thorY){
+                direction = "SW";
+                thorX--;
+                thorY++;
+            }else{
+                if(lightX > thorX && lightY > thorY){
+                    direction = "SE";
+                    thorX++;
+                    thorY++;
+                }else{
+                    if(lightX > thorX){
+                        direction = "E";
+                        thorX++;
+                    }else{
+                        if(lightX < thorX){
+                            direction = "W";
+                            thorX--;
+                        }
+                    }
+
+                    if(lightY > thorY){
+                        direction = "S";
+                        thorY++;
+                    }else{
+                        if(lightY < thorY){
+                           direction = "N";
+                            thorY--; 
+                        }
+                    }
+                }
+            }
         }
     }
- 
-    console.log(direçãoY + direçãoX); // The final direction Thor is taking this turn
+
+    console.log(direction); // Output the direction in which Thor will move this turn
 }
