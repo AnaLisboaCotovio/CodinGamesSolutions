@@ -18,5 +18,4 @@ for i in input().split() : # For all the temperatures
     elif (t == abs(closest) and signt == True) : # If the absolute value of the number is the same as the absolute value of the closest one and it is positive
         closest = t
 
-
 print(closest) # Output the temperature that is closest to 0
