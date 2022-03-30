@@ -1,24 +1,21 @@
 import java.util.*;
-import java.io.*;
-import java.math.*;
 
 class Player {
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
 
-        // VARIABLES
-        int lightX = in.nextInt(); // the X position of the light of power
-        int lightY = in.nextInt(); // the Y position of the light of power
-        int initialTx = in.nextInt(); // Thor's starting X position
-        int initialTy = in.nextInt(); // Thor's starting Y position
-        int thorX = initialTx; // Thor's current X position
-        int thorY = initialTy; // Thor's current Y position
-        String direction = ""; // The direction Thor will be taking
+        int lightX = in.nextInt(); // The X position of the light of power
+        int lightY = in.nextInt(); // The Y position of the light of power
+        int thorX = in.nextInt(); // Thor's starting X position
+        int thorY = in.nextInt(); // Thor's starting Y position
 
-        while (true) { // game loop
-            int remainingTurns = in.nextInt(); // The remaining amount of turns Thor can move.
+        while (true) { // Game loop
+            String direction = ""; // Direction in which thor will move in each turn
 
+            // Compare Thor's coordinates with the light of power's
+            // Give a direction for thor to move
+            // Change Thor's coordinates accordingly
             if(lightX > thorX && lightY < thorY){
                 direction = "NE";
                 thorX++;
@@ -63,7 +60,7 @@ class Player {
                 }
             }
 
-            System.out.println(direction); // The final direction Thor is taking this turn
+            System.out.println(direction); // Output the direction in which Thor will move this turn
         }
     }
 }
