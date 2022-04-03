@@ -4,7 +4,7 @@ while (true) {
     const enemy2 = readline(); // Name of enemy 2
     const dist2 = parseInt(readline()); // Distance to enemy 2
 
-    if (dist1 < dist2) {
+    if (dist1 < dist2) { 
         print(enemy1);
     } else { 
         print(enemy2);
