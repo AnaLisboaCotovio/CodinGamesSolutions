@@ -13,9 +13,9 @@ class Player {
 
             in.close();
 
-            if(dist1 < dist2){ // If the enemy 1 is closer, shoot it
+            if(dist1 < dist2){ 
                 System.out.println(enemy1); 
-            } else{ // If the enemy 2 is closer, shoot it
+            } else{ 
                 System.out.println(enemy2); 
             }
         }
