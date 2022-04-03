@@ -5,7 +5,7 @@ class Player {
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
 
-        while (true) { // Game loop
+        while (true) {
             String enemy1 = in.next(); // Name of enemy 1
             int dist1 = in.nextInt(); // Distance to enemy 1
             String enemy2 = in.next(); // Name of enemy 2
