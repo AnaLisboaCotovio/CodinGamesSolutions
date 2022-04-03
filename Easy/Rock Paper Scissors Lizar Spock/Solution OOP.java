@@ -49,8 +49,8 @@ class Solution {
         }
 
         Player winner = competition.poll(); // Get the winner
-        System.out.println(winner.number); // print the winner's number
-        System.out.println(winner.enemyString()); // print the winner's enemies' string
+        System.out.println(winner.number); // Print the winner's number
+        System.out.println(winner.enemyString()); // Print the winner's enemies' string
     }
 
     private static Player Duel(Player p1, Player p2){
