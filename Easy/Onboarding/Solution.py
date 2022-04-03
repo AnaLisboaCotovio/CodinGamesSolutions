@@ -1,12 +1,10 @@
-while 1: # Game loop
-
-    # VARIABLES
+while 1:
     enemy_1 = input()  # Name of enemy 1
     enemy_2 = input()  # nName of enemy 2
     dist_1 = int(input())  # Distance to enemy 1
     dist_2 = int(input())  # Distance to enemy 2
 
-    if dist_1 < dist_2: # If the enemy 1 is closer, shoot it
+    if dist_1 < dist_2:
         print(enemy_1)
-    else: # If the enemy 2 is closer, shoot it
+    else: 
         print(enemy_2)
