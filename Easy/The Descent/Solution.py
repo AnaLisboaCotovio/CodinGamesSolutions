@@ -1,13 +1,13 @@
-while True: # Game loop - Loops everytime the ship changes direction
+while True: 
 
-    max = 0 # The max height of a mountain
-    idmax = 0 # The id of the mountain with the maximum height
+    max = 0 
+    idmax = 0 
 
-    for i in range(8): # Looping within the 8 - the amount of mountains
-        mountain_h = int(input()) # Represents the height of one mountain just given as input
+    for i in range(8): 
+        mountain_h = int(input()) # The height of each mountain
 
-        if mountain_h > max: # If the input mountain's height is bigger than the maximum
-            max = mountain_h # Substitute de maximum height for the input's height
-            idmax = i # And the id of the maximum height mountain for the id of the input's mountain
+        if mountain_h > max:
+            max = mountain_h 
+            idmax = i
     
-    print(idmax) # Destroy the tallest mountain
+    print(idmax)
