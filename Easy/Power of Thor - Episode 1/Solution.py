@@ -1,15 +1,8 @@
-# lightX: The X position of the light of power
-# lightY: The Y position of the light of power
-# thorX: Thor's starting X position
-# thorY: Thor's starting Y position
 lightX, lightY, thorX, thorY = [int(i) for i in input().split()]
 
-while True: # Game loop
-    direction = "" # Direction in which thor will move in each turn
+while True: 
+    direction = "" 
 
-    # Compare Thor's coordinates with the light of power's
-    # Give a direction for thor to move
-    # Change Thor's coordinates accordingly
     if lightX > thorX and lightY < thorY:
         direction = "NE"
         thorX += 1
@@ -41,4 +34,4 @@ while True: # Game loop
             direction = "N"
             thorY -= 1
 
-    print(direction) # Output the direction in which Thor will move this turn
+    print(direction) 
