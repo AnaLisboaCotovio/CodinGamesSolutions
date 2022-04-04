@@ -10,7 +10,7 @@ class Solution {
         Boolean signt; // TRUE if temperature positive and FALSE if temperature negative
 
         if (n <= 0) { 
-                closest = 0; // Set 0 as the closest temperature (requested in the rules)
+                closest = 0; 
         }
 
         for (int i = 0; i < n; i++) {
