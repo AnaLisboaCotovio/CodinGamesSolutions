@@ -1,15 +1,12 @@
 var inputs = readline().split(' ');
-const lightX = parseInt(inputs[0]); // The X position of the light of power
-const lightY = parseInt(inputs[1]); // The Y position of the light of power
-let thorX = parseInt(inputs[2]); // Thor's starting X position
-let thorY = parseInt(inputs[3]); // Thor's starting Y position
+const lightX = parseInt(inputs[0]); 
+const lightY = parseInt(inputs[1]);
+let thorX = parseInt(inputs[2]); 
+let thorY = parseInt(inputs[3]); 
 
 while (true) {
-    let direction = ""; // Direction in which thor will move in each turn
-
-    // Compare Thor's coordinates with the light of power's
-    // Give a direction for thor to move
-    // Change Thor's coordinates accordingly
+    let direction = ""; 
+    
     if(lightX > thorX && lightY < thorY){
         direction = "NE";
         thorX++;
@@ -54,5 +51,5 @@ while (true) {
         }
     }
 
-    console.log(direction); // Output the direction in which Thor will move this turn
+    console.log(direction); 
 }
