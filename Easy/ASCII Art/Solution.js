@@ -2,7 +2,7 @@ const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 const l = parseInt(readline()); // The length of each letter
 const h = parseInt(readline()); // The height of each letter
-const t = readline(); // The word to print in ASCII art
+const t = readline(); // The word requested in ASCII art
 const word = t.toUpperCase(); 
 var ids = getIds(word); // Stores the id's of each letter in the alphabet
 
