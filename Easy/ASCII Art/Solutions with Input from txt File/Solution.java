@@ -9,7 +9,7 @@ class Solution {
     public static void main(String args[]) throws
 FileNotFoundException {
 
-        File input = new File("Test Sets/test1.txt");
+        File input = new File("Test Sets/test1.txt"); // Paste Source path of the txt file of the input
         Scanner in = new Scanner(input);
 
         int l = in.nextInt(); // The length of each letter
