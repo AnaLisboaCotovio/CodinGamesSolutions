@@ -1,6 +1,6 @@
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
 
-with open("E:/Github Projects/CodinGames - Practices/Easy/ASCII Art/Test Sets/test6.txt") as file: # Paste Source path of the txt file of the input
+with open("Test Sets/test1.txt") as file: # Paste Source path of the txt file of the input
     lines = file.readlines()
 line = [x[:-1] for x in lines]
 
