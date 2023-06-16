@@ -10,7 +10,7 @@ class SolutionFP{
     public static void main(String args[]) throws
 FileNotFoundException {
 
-        File input = new File("E:/Github Projects/CodinGames - Practices/Easy/Rock Paper Scissors Lizar Spock/Test Sets/test5.txt"); // Paste Source path of the txt file of the input
+        File input = new File("Test Sets/test1.txt"); // Paste Source path of the txt file of the input
         Scanner in = new Scanner(input);
 
         int n = in.nextInt(); // The number of players
