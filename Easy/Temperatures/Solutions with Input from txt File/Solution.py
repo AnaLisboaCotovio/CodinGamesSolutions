@@ -10,10 +10,6 @@ signt = None # TRUE if temperature positive and FALSE if temperature negative
 print()
 print("From the  following temperatures: ", end = " ")
 
-#if n <= 0 : 
-#    closest = 0 
-#    print("0")
-
 if int(line[0]) == 0 :
     print("0", end = " ")
     closest = 0
