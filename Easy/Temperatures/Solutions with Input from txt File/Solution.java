@@ -7,7 +7,7 @@ class Solution {
     public static void main(String args[]) throws
 FileNotFoundException {
 
-        File input = new File("Test Sets/test6.txt");
+        File input = new File("Test Sets/test1.txt");
         Scanner in = new Scanner(input);
 
         int n = in.nextInt(); // The number of temperatures to analyse
