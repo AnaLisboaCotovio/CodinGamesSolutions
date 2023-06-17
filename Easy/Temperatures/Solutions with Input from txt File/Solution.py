@@ -1,4 +1,4 @@
-with open("Test Sets/test6.txt") as  file: # Paste Source path of the txt file of the input
+with open("Test Sets/test1.txt") as  file: # Paste Source path of the txt file of the input
     lines = file.readlines()
 line = [x[:-1] for x in lines[:-1]]
 line.append(lines[-1])
