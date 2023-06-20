@@ -114,7 +114,7 @@ class SolutionOOP {
     public static void main(String args[]) throws
 FileNotFoundException {
 
-        File input = new File("Test Sets/test10.txt");
+        File input = new File("Test Sets/test1.txt");
         Scanner s = new Scanner(input);
 
         System.out.println();
